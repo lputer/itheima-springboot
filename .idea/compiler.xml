@@ -10,18 +10,24 @@
         <module name="springboot_homework_day04" />
         <module name="springboot_quickstart" />
         <module name="springboot_request" />
+        <module name="springboot_reponse" />
+        <module name="springboot_homework_day05" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="11">
       <module name="springboot_homework_day04" target="11" />
+      <module name="springboot_homework_day05" target="11" />
       <module name="springboot_quickstart" target="11" />
+      <module name="springboot_reponse" target="11" />
       <module name="springboot_request" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="springboot_homework_day04" options="-parameters" />
+      <module name="springboot_homework_day05" options="-parameters" />
       <module name="springboot_quickstart" options="-parameters" />
+      <module name="springboot_reponse" options="-parameters" />
       <module name="springboot_request" options="-parameters" />
     </option>
   </component>

@@ -1,11 +1,11 @@
 package com.itheima.controller;
 
 import com.itheima.Pojo.User;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
+import java.time.LocalDateTime;
 import java.util.Arrays;
 import java.util.List;
 
@@ -65,8 +65,36 @@ public class RequestController {
 
     // 集合参数
     @RequestMapping("/listParam")
-    public String listParam(@RequestParam List hobby) {
+    public String listParam(@RequestParam List<String> hobby) {
         System.out.println(hobby);
+        return "OK";
+    }
+
+    // 日期参数
+    @RequestMapping("/dateParam")
+    public String dateParam(@DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss") LocalDateTime updateTime) {
+        System.out.println(updateTime);
+        return "OK";
+    }
+
+    // json参数
+    @RequestMapping("/jsonParam")
+    public String jsonParam(@RequestBody User user) {
+        System.out.println(user);
+        return "OK";
+    }
+
+    // 路径参数 /path/1
+    @RequestMapping("/path/{id}")
+    public String path(@PathVariable Integer id) {
+        System.out.println(id);
+        return "OK";
+    }
+
+    // 路径参数 /path/1
+    @RequestMapping("/path/{id}/{name}")
+    public String path(@PathVariable Integer id, @PathVariable String name) {
+        System.out.println(id + ":" + name);
         return "OK";
     }
 }

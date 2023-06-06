@@ -4,7 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/itheima-springboot.iml" filepath="$PROJECT_DIR$/itheima-springboot.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot_homework_day04/springboot_homework_day04.iml" filepath="$PROJECT_DIR$/springboot_homework_day04/springboot_homework_day04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot_homework_day05/springboot_homework_day05.iml" filepath="$PROJECT_DIR$/springboot_homework_day05/springboot_homework_day05.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot_quickstart/springboot_quickstart.iml" filepath="$PROJECT_DIR$/springboot_quickstart/springboot_quickstart.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot_reponse/springboot_reponse.iml" filepath="$PROJECT_DIR$/springboot_reponse/springboot_reponse.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot_request/springboot_request.iml" filepath="$PROJECT_DIR$/springboot_request/springboot_request.iml" />
     </modules>
   </component>
